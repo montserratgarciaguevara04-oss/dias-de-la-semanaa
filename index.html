@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<title>Días de la semana</title>
+
+<script>
+
+function mostrarDias(){
+
+let dias=[
+"Lunes",
+"Martes",
+"Miércoles",
+"Jueves",
+"Viernes",
+"Sábado",
+"Domingo"
+];
+
+let resultado="";
+
+for(let i=0;i<dias.length;i++){
+
+resultado+="Día "+(i+1)+": "+dias[i]+"<br>";
+
+}
+
+document.getElementById("listaDias").innerHTML=resultado;
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+<h2>Días de la semana</h2>
+
+<button onclick="mostrarDias()">Mostrar días</button>
+
+<br><br>
+
+<div id="listaDias"></div>
+
+</body>
+
+</html>
